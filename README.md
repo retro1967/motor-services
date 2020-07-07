@@ -9,7 +9,9 @@
 Deployed app: [Motor Services](https://automotive-service.herokuapp.com/)
 
 
-![Image](/public/images/auto_serve.png)
+<p>
+    <img src="public/images/auto_serv.png" width="220" height="240" />
+</p>
 
 
 ## :hammer: TOOLS
