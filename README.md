@@ -8,7 +8,7 @@
 # Motor-Services
 Deployed app: [Motor Services](https://automotive-service.herokuapp.com/)
 
-![Image](public/images/auto_serve.png)
+![Image](./public/images/auto_serve.png)
 
 ## :hammer: TOOLS
 * [Express.js](https://expressjs.com/)
