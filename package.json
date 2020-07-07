@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "start": "node server.js",
-    "watch": "nodemon server.js"
+    "watch": "nodemon server.js",
+    "sass": "node-sass ./public/stylesheets/sass/main.scss ./public/stylesheets/css/style2.css -w"
   },
   "repository": {
     "type": "git",
@@ -27,8 +28,12 @@
     "express-session": "^1.17.1",
     "handlebars": "^4.7.6",
     "js-datepicker": "^5.14.2",
+    "moment": "^2.27.0",
     "mysql2": "^2.1.0",
     "nodemon": "^2.0.4",
     "sequelize": "^5.21.13"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
   }
 }

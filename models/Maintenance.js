@@ -1,5 +1,6 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
+const moment = require('moment');
 
 // create the Maintenance Model
 class Maintenance extends Model { }
@@ -15,7 +16,9 @@ Maintenance.init(
     },
     date: {
       type: DataTypes.DATEONLY,
-      allowNull: false,
+      get: function() {
+        return moment.utc(this.getDataValue('CreateDate')).format('YYYY-MM-DD')
+      }
     }, // removed user_id
     mileage: {
       type: DataTypes.INTEGER,

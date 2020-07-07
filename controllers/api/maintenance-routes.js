@@ -1,4 +1,5 @@
 const { User, Maintenance, Cost } = require('../../models');
+const moment = require('moment');
 
 const router = require('express').Router();
 
@@ -24,7 +25,6 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     // Expects id, date, mileage, user_id
     Maintenance.create({
-        date: req.body.date,
         mileage: req.body.mileage,
         maintenance_type: req.body.maintenance_type,
         user_id: req.session.user_id
@@ -65,7 +65,6 @@ router.put('/:id', (req, res) => {
 router.delete('/delete', (req, res) => {
     Maintenance.destroy({
         where: {
-            date: req.body.date,
             mileage: req.body.mileage
         }
     })
