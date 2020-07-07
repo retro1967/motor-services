@@ -5,8 +5,8 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/deannapi/motor-services)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/deannapi/motor-services)
 
-# Motor-Services
-Deployed app: [Motor Services](https://automotive-service.herokuapp.com/)
+# Vehicle Maintenance Tracker
+Deployed app: [Automotive Tracker](https://automotive-service.herokuapp.com/)
 
 
 <p>
