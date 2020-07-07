@@ -6,7 +6,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/deannapi/motor-services)
 
 # Motor-Services
-[Motor Services](https://motor-services.herokuapp.com/)
+[Motor Services](https://automotive-service.herokuapp.com/)
 
 ## :hammer: TOOLS
 * [Express.js](https://expressjs.com/)
