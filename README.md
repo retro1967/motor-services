@@ -8,7 +8,8 @@
 # Motor-Services
 [Motor Services](https://automotive-service.herokuapp.com/)
 
-[Image](./public/images/auto_serve.png)
+![Image](./public/images/auto_serve.png)
+
 ## :hammer: TOOLS
 * [Express.js](https://expressjs.com/)
 * [Node.js](https://nodejs.org/en/)
