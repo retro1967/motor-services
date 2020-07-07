@@ -1,13 +1,21 @@
 <section>
     <form id="miles_form">
         {{!-- select date --}}
-        <label for="date">Date:</label>
-        <input type="date" id="date_miles" name="date_miles" class="form-control miles-input">
+            {{!-- <div class="col">
+                <label for="date">Date:</label>
+                <input type="date" id="date_miles" name="date_miles" class="form-control miles-input">
+            </div> --}}
 
-        {{!-- enter mileage --}}
-        <label>Enter Current Mileage:</label>
-        <input name="mileage" type="number" id="miles" class="form-control miles-input" placeholder="30000">
-        <button id="add-mileage" class="btn btn-outline-primary miles-input" type="submit">Submit</button>
+            {{!-- enter mileage --}}
+        
+        <label>Current Mileage:</label>
+        
+        <div class="input-group mb-3">
+            <input name="mileage" type="number" id="miles" class="form-control miles-input" placeholder="30000">
+            <div class="input-group-append">
+                <button id="add-mileage" class="btn btn-outline-primary miles-input" type="button">Submit</button>
+            </div>
+        </div>
     </form>
 </section>
 
@@ -17,8 +25,8 @@
         <tr>
             <th>Date</th>
             <th>Mileage</th>
-            <th>Projected Service Date (Conventional Motor Oil)</th>
-            <th>Projected Service Date (Synthetic Motor Oil)</th>
+            <th>Conventional Oil Change</th>
+            <th>Synthetic Oil Change</th>
             <th>Brake Pads</th>
             <th>Tires</th>
             <th>Air Filter</th>
