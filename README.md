@@ -6,7 +6,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/deannapi/motor-services)
 
 # Motor-Services
-[Motor Services](https://automotive-service.herokuapp.com/)
+Deployed app: [Motor Services](https://automotive-service.herokuapp.com/)
 
 ![Image](public/images/auto_serve.png)
 
