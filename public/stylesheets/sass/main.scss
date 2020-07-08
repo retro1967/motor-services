@@ -1,5 +1,6 @@
 $color-secondary: rgb(44, 86, 110);
 $color-primary: rgb(255, 255, 255);
+$text-color: whitesmoke;
 
 * {
     font-family: "Libre Baskerville";
@@ -7,6 +8,10 @@ $color-primary: rgb(255, 255, 255);
 
 body {
     background-color: $color-primary;
+}
+
+.header-text, footer {
+    color: $text-color;
 }
 
 header, footer, button {
