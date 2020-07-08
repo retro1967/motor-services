@@ -8,7 +8,7 @@ async function signupFormHandler(event) {
   }
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
-  const oil_type = document.querySelector('input[name="oilRadios"]:checked').value;
+  const oil_type = document.querySelector('option[name="oilRadios"]:checked').value;
 
 
   if (full_name && email && password) {

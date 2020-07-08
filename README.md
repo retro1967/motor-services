@@ -5,8 +5,13 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/deannapi/motor-services)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/deannapi/motor-services)
 
-# Motor-Services
-[Motor Services](https://automotive-service.herokuapp.com/)
+# Vehicle Maintenance Tracker
+Deployed app: [Automotive Tracker](https://automotive-service.herokuapp.com/)
+
+## :bulb: DESCRIPTION
+User can track time and mileage on their vehicle and then be given a time frame for their next maintenance check.
+
+<p><img src="public/images/auto_serv.png"/></p>
 
 ## :hammer: TOOLS
 * [Express.js](https://expressjs.com/)
@@ -19,6 +24,4 @@
 * [BCrypt](https://www.npmjs.com/package/bcrypt)
 * [Connect Session Sequelize](https://www.npmjs.com/package/connect-session-sequelize)
 * [Express Session](https://www.npmjs.com/package/express-session)
-
-## :bulb: DESCRIPTION
-User can track time and mileage on their vehicle and then be given a time frame for their next maintenance check.
+* [node-sass](https://www.npmjs.com/package/node-sass)

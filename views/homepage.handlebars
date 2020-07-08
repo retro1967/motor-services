@@ -1,6 +1,6 @@
 {{!-- this page will handle both login and signup --}}
 
-<form class="login-form form-group">
+<form class="login-form form-group home-form">
   <h5>Sign in</h5>
   <div>
     <label for="email-login">Email:</label>
@@ -11,11 +11,11 @@
     <input type="password" id="password-login" class="form-control" />
   </div>
   <div>
-    <button id="login" class="btn btn-danger">Login</button>
+    <button id="login" class="btn btn-danger loginBTN">Login</button>
   </div>
 </form>
 
-<form class="signup-form">
+<form class="signup-form home-form">
   <h5>Create an account.</h5>
   <div>
     <label for="fullname-signup">Full Name:</label>
@@ -30,25 +30,25 @@
     <input type="password" id="password-signup" class="form-control"/>
   </div>
 
-  <legend><h5>What is your oil type?</h5></legend>
-    <div class="form-check">
-      <input type="radio" name="oilRadios" id="conv-radio" value="Conventional" checked>
-      <label class="form-check-label" for="conv-radio">
-        Conventional
-      </label>
+  <legend><h5>Oil Type</h5></legend>
+    {{!-- <div class="form-check">
+      <input type="radio" name="oilRadios" id="conv-radio" value="Conventional" class="radioInput" checked>
+      <label class="form-check-label" for="conv-radio">Conventional</label>
     </div>
 
     <div class="form-check">
-      <input type="radio" name="oilRadios" id="synth-radio" value="Synthetic">
-      <label class="form-check-label" for="synth-radio">
-        Synthetic
-      </label>
-    </div>
+      <input type="radio" name="oilRadios" id="synth-radio" value="Synthetic" class="radioInput">
+      <label class="form-check-label" for="synth-radio">Synthetic</label>
+    </div> --}}
+
+    <select class="custom-select">
+      <option value="Conventional" name="oilRadios" selected>Conventional</option>
+      <option value="Synthetic" name="oilRadios">Synthetic</option>
+    </select>
 
   <div>
-    <button id="signup" class="btn btn-danger">Signup</button>
+    <button id="signup" class="btn btn-danger loginBTN">Signup</button>
   </div>
 </form>
 
-</form>
 <script src="/javascript/login.js"></script>

@@ -24,6 +24,8 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     // Expects id, date, mileage, user_id
+    Maintenance.destroy({ truncate: true })
+    .then(
     Maintenance.create({
         mileage: req.body.mileage,
         maintenance_type: req.body.maintenance_type,
@@ -33,7 +35,8 @@ router.post('/', (req, res) => {
         .catch(err => {
             console.log(err);
             res.status(500).json(err);
-        });
+        })
+    );
 });
 
 router.put('/:id', (req, res) => {
