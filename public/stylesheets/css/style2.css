@@ -4,6 +4,9 @@
 body {
   background-color: white; }
 
+.header-text, footer {
+  color: whitesmoke; }
+
 header, footer, button {
   background-color: #2c566e; }
 

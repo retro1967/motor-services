@@ -2,19 +2,12 @@ async function signupFormHandler(event) {
   event.preventDefault();
 
   const full_name = document.querySelector('#name-signup').value.trim();
+  if (!full_name) {
+    window.alert('No name has been entered!');
+    return;
+  }
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
-  // Whichever oil type radio button is selected 'Conventional' or 'Synthetic'
-  // const synthOil = document.getElementById('#synth-radio');
-  // const convOil = document.getElementById('#conv-radio');
-
-  // if (synthOil.checked) {
-  //   const oil_type = synthOil.value;
-  //   return oil_type;
-  // }
-  // else {
-  //   oil_type = convOil.value;
-  // };
   const oil_type = document.querySelector('input[name="oilRadios"]:checked').value;
 
 
@@ -27,7 +20,7 @@ async function signupFormHandler(event) {
         password,
         oil_type
       }),
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
     });
 
     // check the response status
@@ -36,7 +29,11 @@ async function signupFormHandler(event) {
       localStorage.setItem('user', JSON.stringify(res.user));
       document.location.assign('/welcome');
     } else {
-      console.log("Something went wrong");
+      console.log(response.status)
+      if (response.status === 512) {
+        window.alert('This email has been used before!')
+      }
+      console.log(response);
     }
   }
 }

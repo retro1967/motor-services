@@ -27,6 +27,10 @@ User.init(
       unique: true,
       validate: {
         isEmail: true
+      },
+      unique: {
+        args: true,
+        msg: 'Email address already in use!'
       }
     },
     password: {

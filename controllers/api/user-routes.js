@@ -60,8 +60,13 @@ router.post("/", async (req, res) => {
     }
   }
   catch (err) {
-    console.log(err);
-    res.status(500).json(err);
+    console.log(err.errors[0].type);
+    if (err.errors[0].type === 'unique violation') {
+      res.status(512).json(err);
+    }
+    else {
+      res.status(500).json(err);
+    }
   }
 });
 
