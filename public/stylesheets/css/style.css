@@ -221,9 +221,107 @@ form h5 {
 .welcome-btn p {
     color: black;
     font-size: 14px;
-    padding: 2px;
+    padding: 5px;
 }
 
 .log-table {
     display: none;
+}
+
+.fa-trash {
+    color: rgb(214, 58, 58);
+}
+
+.red-important {
+    border: 1px solid rgb(214, 58, 58);
+}
+
+.green {
+    border: 1px solid rgb(70, 139, 70);
+}
+
+@media only screen and (max-width: 850px) {
+    #porsche {
+        visibility: hidden;
+    }
+    header {
+        margin-bottom: 30px;
+    }
+    .welcome-header {
+        font-size: 20px;
+    }
+    #welcome-form {
+        width: 100%;
+        margin-left: 0;
+    }
+    .welcome-btn {
+        justify-content: center;
+        width: 80%;
+        margin: 10px auto;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .main {
+        display: block;
+    }
+    .home-form {
+        float: none;
+        margin: auto;
+        width: 70%;
+        display: block;
+    }
+    #signup {
+        margin-bottom: 80px;
+        margin-top: 5px;
+    }
+    .form-check {
+        display: inline;
+    }
+    .form-check-label {
+        align-items: center;
+    }
+    .radioInput {
+        align-items: center;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    .loginBTN {
+        width: auto;
+        margin: auto;
+    }
+    footer {
+        height: 60px;
+    }
+    .link-container {
+        width: 100%;
+    }
+    .left-form, .right-form {
+        float: none;
+        width: auto;
+    }
+    .logbook-hbs {
+        display: block;
+    }
+    #miles_form {
+        width: 100%;
+        margin: auto;
+    }
+    #blocks {
+        display: grid;
+    }
+    #mile_book {
+        margin-bottom: 80px;
+    }
+    .right-form {
+        margin-bottom: 80px;
+    }
+    .table-header {
+        margin: auto;
+    }
+    .right-form {
+        margin-top: 30px;
+    }
 }
