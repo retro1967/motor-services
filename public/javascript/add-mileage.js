@@ -157,8 +157,20 @@ async function renderTable() {
 }
 }
 
-document.getElementById("add-mileage")
-  .addEventListener('click', async () => {
+const mileBtn = document.getElementById("add-mileage");
+
+
+// Trigger "click" from enter on miles input
+// document.getElementById("miles")
+//   .addEventListener("keyup", function(event) {
+//     event.preventDefault();
+//     console.log(event.keyCode);
+//     if (event.keyCode === 13) {
+//       mileBtn.click();
+//     }
+// });
+
+mileBtn.addEventListener('click', async () => {
     // get form data
     // Date comes from model now
     
@@ -168,6 +180,7 @@ document.getElementById("add-mileage")
     // post to api with the form data
     await post({ mileage, user_id })
     location.reload();
-  });
+});
+
 
 document.addEventListener("DOMContentLoaded", renderTable);

@@ -152,7 +152,7 @@ form h5 {
 
 .logbook-hbs {
     overflow: auto;
-    display: inline-flex;
+    /* display: inline-flex; */
     width: 100%;
     padding: 20px;
 }
@@ -224,12 +224,36 @@ form h5 {
     padding: 5px;
 }
 
+.custom-select {
+    margin-bottom: 10px;
+}
+
 .log-table {
     display: none;
 }
 
 .fa-trash {
     color: rgb(214, 58, 58);
+}
+
+#miles_form {
+    width: 100%;
+    margin: auto;
+}
+#blocks {
+    display: grid;
+}
+#mile_book {
+    margin-bottom: 80px;
+}
+.right-form {
+    margin-bottom: 80px;
+}
+.table-header {
+    margin: auto;
+}
+.right-form {
+    margin-top: 30px;
 }
 
 .red-important {
@@ -292,9 +316,12 @@ form h5 {
         width: auto;
         margin: auto;
     }
+
     footer {
         height: 60px;
+        align-items: center;
     }
+
     .link-container {
         width: 100%;
     }
@@ -305,23 +332,5 @@ form h5 {
     .logbook-hbs {
         display: block;
     }
-    #miles_form {
-        width: 100%;
-        margin: auto;
-    }
-    #blocks {
-        display: grid;
-    }
-    #mile_book {
-        margin-bottom: 80px;
-    }
-    .right-form {
-        margin-bottom: 80px;
-    }
-    .table-header {
-        margin: auto;
-    }
-    .right-form {
-        margin-top: 30px;
-    }
+
 }
