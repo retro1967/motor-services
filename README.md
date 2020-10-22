@@ -10,6 +10,7 @@ Deployed app: [Automotive Tracker](https://automotive-service.herokuapp.com/)
 
 ## :bulb: DESCRIPTION
 User can track time and mileage on their vehicle and then be given a time frame for their next maintenance check.
+Display's a responsive front-end comprised of SASS and Handlebars.js, and a back end built with Node and MySQL2
 
 <p><img src="public/images/auto_serv.png"/></p>
 
